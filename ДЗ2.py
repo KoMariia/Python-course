@@ -7,6 +7,7 @@
 n = int(input("Введите количество монет: "))
 num_r = 0
 num_o = 0
+no_res = 0
 
 for _ in range(n):
     m = int(input("Введите 0 или 1 (орел или решка): "))

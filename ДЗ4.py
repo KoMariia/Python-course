@@ -62,3 +62,15 @@ for j in range(1,count):
         max_sum = sum
 
 print(max_sum)
+
+
+# Оптимизированный вариант
+list_a = list(random.randint(1,10) for i in range(int(input("Введите число кустов: "))))
+print(list_a)
+max_ber = 0
+for i in range(len(list_a)):
+    ber = list_a[i-2]+list_a[i-1]+list_a[i]
+    if max_ber < ber:
+         max_ber = ber
+
+print(max_ber)
